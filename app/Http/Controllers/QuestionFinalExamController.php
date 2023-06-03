@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\hobby;
-use App\Http\Requests\StorehobbyRequest;
-use App\Http\Requests\UpdatehobbyRequest;
+use App\Models\QuestionFinalExam;
+use App\Http\Requests\StoreQuestionFinalExamRequest;
+use App\Http\Requests\UpdateQuestionFinalExamRequest;
 
-class HobbyController extends Controller
+class QuestionFinalExamController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class HobbyController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorehobbyRequest  $request
+     * @param  \App\Http\Requests\StoreQuestionFinalExamRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorehobbyRequest $request)
+    public function store(StoreQuestionFinalExamRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class HobbyController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\hobby  $hobby
+     * @param  \App\Models\QuestionFinalExam  $questionFinalExam
      * @return \Illuminate\Http\Response
      */
-    public function show(hobby $hobby)
+    public function show(QuestionFinalExam $questionFinalExam)
     {
         //
     }
@@ -53,10 +53,10 @@ class HobbyController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\hobby  $hobby
+     * @param  \App\Models\QuestionFinalExam  $questionFinalExam
      * @return \Illuminate\Http\Response
      */
-    public function edit(hobby $hobby)
+    public function edit(QuestionFinalExam $questionFinalExam)
     {
         //
     }
@@ -64,11 +64,11 @@ class HobbyController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatehobbyRequest  $request
-     * @param  \App\Models\hobby  $hobby
+     * @param  \App\Http\Requests\UpdateQuestionFinalExamRequest  $request
+     * @param  \App\Models\QuestionFinalExam  $questionFinalExam
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatehobbyRequest $request, hobby $hobby)
+    public function update(UpdateQuestionFinalExamRequest $request, QuestionFinalExam $questionFinalExam)
     {
         //
     }
@@ -76,10 +76,10 @@ class HobbyController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\hobby  $hobby
+     * @param  \App\Models\QuestionFinalExam  $questionFinalExam
      * @return \Illuminate\Http\Response
      */
-    public function destroy(hobby $hobby)
+    public function destroy(QuestionFinalExam $questionFinalExam)
     {
         //
     }

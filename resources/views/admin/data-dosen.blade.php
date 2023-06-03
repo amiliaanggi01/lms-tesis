@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout')
 @section('main')
     <H1>DATA DOSEN</H1>
     <main>

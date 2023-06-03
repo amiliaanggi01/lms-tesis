@@ -9,7 +9,7 @@
     <meta name="author" content="" />
     <title>Dashboard - SB Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="{{asset('css/styles.css')}}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
@@ -26,13 +26,16 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">ADMIN</div>
                         <a class="nav-link" href="index.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapseLayouts" aria-controls="collapseLayouts">
+                        <div class="sb-sidenav-menu-heading">ADMIN</div>
+                        <a class="nav-link collapsed" href="#" >
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Ruang UTS
+                        </a>
+                        <a class="nav-link collapsed" href="#" >
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                             Ruang UAS
                         </a>
@@ -41,16 +44,46 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Ruang Utama
                         </a>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePages">
+                        <a class="nav-link " href="{{url('datalecture')}}" >
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Data Dosen
                         </a>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePages">
+                        <a class="nav-link collapsed" href="{{url('datastudent')}}" >
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Data Mahasiswa
                         </a>
+                        <div class="sb-sidenav-menu-heading">DOSEN</div>
+                          {{-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                           Soal
+                          </a> --}}
+                          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                          data-bs-target="#collapseLayouts" aria-controls="collapseLayouts">
+                          <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                          Ruang Soal UTS
+                          </a>
+                          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                          data-bs-target="#collapseLayouts" aria-controls="collapseLayouts">
+                          <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                          Ruang Soal UAS
+                          </a>
+                          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Ruang Soal UTAMA
+                           </a>
+                           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Nilai
+                           </a>
+                           <div class="sb-sidenav-menu-heading">Mahasiswa</div>
+                          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                           Tampilan Soal
+                          </a>
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
