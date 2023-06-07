@@ -1,45 +1,44 @@
 @extends('layout')
 @section('main')
-    <H1>DATA DOSEN</H1>
     <main>
         <div class="container-fluid px-4">
-            <h1 class="mt-4">Tables</h1>
+            <h1 class="mt-4">Tabel Data Dosen</h1>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                <li class="breadcrumb-item active">Tables</li>
+                <li class="breadcrumb-item active">Tabel Dosen</li>
             </ol>
             <div class="card mb-4">
-                <div class="card-body">
+                {{-- <div class="card-body">
                     DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
                     <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
                     .
-                </div>
+                </div> --}}
             </div>
             <div class="card mb-4">
                 <div class="card-header">
                     <i class="fas fa-table me-1"></i>
-                    DataTable Example
+                    Data Tabel Akun Dosen
                 </div>
                 <div class="card-body">
                     <table id="datatablesSimple">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
+                                <th>Nama</th>
+                                <th>User</th>
+                                <th>Email</th>
+                                <th>Hp</th>
+                                <th>Last Acces</th>
+                                <th>Acction</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
+                                <th>Nama</th>
+                                <th>User</th>
+                                <th>Email</th>
+                                <th>Hp</th>
+                                <th>Last Acces</th>
+                                <th>Acction</th>
                             </tr>
                         </tfoot>
                         <tbody>
@@ -49,7 +48,11 @@
                                 <td>Edinburgh</td>
                                 <td>61</td>
                                 <td>2011/04/25</td>
-                                <td>$320,800</td>
+                                <td>
+                                    <a class="btn btn-success" href="#" role="button"><i class="bi bi-pencil-square"></i>tampil</a>
+                                    <a class="btn btn-primary" href="#" role="button"><i class="bi bi-pencil-square"></i>edit</a>
+                                    <a class="btn btn-danger" href="#" role="button"><i class="bi bi-pencil-square"></i>hapus</a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Garrett Winters</td>

@@ -15,7 +15,7 @@ class LectureController extends Controller
      */
     public function index()
     {
-        return view('admin/data-mahasiswa');
+        return view('admin/data-dosen');
     }
 
     /**

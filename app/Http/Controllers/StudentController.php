@@ -15,7 +15,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('admin/data-dosen');
+        return view('admin/data-mahasiswa');
     }
 
     /**
