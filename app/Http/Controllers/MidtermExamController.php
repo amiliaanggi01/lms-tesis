@@ -15,7 +15,7 @@ class MidtermExamController extends Controller
      */
     public function index()
     {
-        return view('admin/data-dosen');
+        return view('admin/uts');
     }
 
     /**

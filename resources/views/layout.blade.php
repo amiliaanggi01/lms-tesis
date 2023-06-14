@@ -31,7 +31,7 @@
                             Dashboard
                         </a>
                         <div class="sb-sidenav-menu-heading">ADMIN</div>
-                        <a class="nav-link collapsed" href="#" >
+                        <a class="nav-link collapsed" href="{{url('uts')}}" >
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                             Ruang UTS
                         </a>

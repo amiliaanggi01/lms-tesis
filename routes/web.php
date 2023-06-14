@@ -3,7 +3,9 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LectureController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\MidtermExamController;
 use App\Models\Lecture;
+use App\Models\MidtermExam;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,10 +37,15 @@ Route::get('/', function () {
 //     return view('admin/data-dosen');
 // })->name('datadosen');
 
+//untuk adminn
 Route::resources([
     'datastudent' => StudentController::class,
     'index' => AdminController::class,
     'datalecture' => LectureController::class,
+    //'uts' => MidtermExamController::class,
+
 ]);
+
+
 // Route::resource('/data-mahasiswa', AdminController::class);// route
 
